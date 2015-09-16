@@ -58,7 +58,8 @@ else
     fi
     cd build
     if [ ! -e ${NGINX_SRC_VER} ]; then
-        wget http://nginx.org/download/${NGINX_SRC_VER}.tar.gz
+        #wget http://nginx.org/download/${NGINX_SRC_VER}.tar.gz
+	wget http://tengine.taobao.org/download/tengine-2.1.1.tar.gz
         echo "nginx Downloading ... Done"
         tar xf ${NGINX_SRC_VER}.tar.gz
     fi

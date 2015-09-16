@@ -28,15 +28,15 @@
 #   curl http://127.0.0.1:10080/mruby-hello
 #
 
-FROM ubuntu:14.04
+FROM nachochip/ffmpeg
 MAINTAINER matsumotory
 
 RUN apt-get -y update
 RUN apt-get -y install sudo openssh-server
 RUN apt-get -y install git
-RUN apt-get -y install curl
+RUN apt-get -y install curl wget
 RUN apt-get -y install rake
-RUN apt-get -y install ruby2.0 ruby2.0-dev
+RUN apt-get -y install ruby ruby-dev
 RUN apt-get -y install bison
 RUN apt-get -y install libcurl4-openssl-dev
 RUN apt-get -y install libhiredis-dev
