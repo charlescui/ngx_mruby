@@ -46,7 +46,7 @@ if [ "$ONLY_BUILD_NGX_MRUBY" = "" ]; then
       #wget http://nginx.org/download/${NGINX_SRC_VER}.tar.gz
       wget http://tengine.taobao.org/download/tengine-2.1.1.tar.gz
       echo "nginx Downloading ... Done"
-      tar xf ${NGINX_SRC_VER}.tar.gz
+      tar zxf ${NGINX_SRC_VER}.tar.gz
   fi
   ln -sf ${NGINX_SRC_VER} nginx_src
   NGINX_SRC=`pwd`'/nginx_src'
